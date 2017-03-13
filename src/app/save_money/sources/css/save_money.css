@@ -1,0 +1,359 @@
+/*base css start*/
+
+@charset "UTF-8";
+
+/*设置默认编码集*/
+
+
+/*css 初始化 start */
+
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*各浏览器显示不同，去掉边框等默认样式*/
+
+fieldset,
+img,
+input,
+button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select,
+input,
+textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+
+/*防止拖动 影响布局*/
+
+textarea {
+    resize: none;
+}
+
+
+/*去掉行内替换元素空白缝隙*/
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+    /*宋体 unicode */
+    color: #666;
+    background: #fff;
+}
+
+
+/*清除浮动*/
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+    /*IE/7/6*/
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+
+/*废物利用*/
+
+s,
+i,
+em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+
+/*京东色*/
+
+.col-red {
+    color: #C81623 !important;
+}
+
+
+/*公共类*/
+
+.w {
+    /*版心 提取 */
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
+
+/*reset css  重置默认的一些样式  浏览器子自带的  目的是保持各种终端显示一致*/
+
+
+/*所有的标签和伪类  before after*/
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    /*在移动端特殊的设置*/
+    /*清除点击高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+    /*设置所有的盒子的宽度以边框开始计算*/
+    -webkit-box-sizing: border-box;
+    /*要兼容 webkit 浏览器内核厂商 这种情况一般是老的移动端浏览器*/
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    color: #333;
+    font-family: "MicroSoft YaHei", "sans-serif";
+    /*是设备默认的字体*/
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #333;
+}
+
+input,
+textarea {
+    border: none;
+    outline: none;
+    resize: none;
+    /*特殊的属性定义  清除浏览器给input自带的样式*/
+    -webkit-appearance: none;
+    /*组件默认的样式空*/
+}
+
+
+/*common css  也就是我们公用的css*/
+
+.f_left {
+    float: left;
+}
+
+.f_right {
+    float: right;
+}
+
+.clearfix::after,
+.clearfix::before {
+    content: ".";
+    line-height: 0;
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.m_r10 {
+    margin-right: 10px;
+}
+
+.m_l10 {
+    margin-left: 10px;
+}
+
+.m_t10 {
+    margin-top: 10px;
+}
+
+.m_b10 {
+    margin-bottom: 10px;
+}
+
+.mianColor {
+    color: #d8505c;
+}
+
+
+/*base css end*/
+
+
+/*header start*/
+
+header {
+    height: 44px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 50px;
+    height: 44px;
+    line-height: 44px;
+    background: #ff841d;
+    color: #FFF;
+}
+
+header .back {
+    width: 50px;
+    float: left;
+    margin-left: -50px;
+    text-align: center;
+}
+
+header .download {
+    width: 50px;
+    float: right;
+    margin-right: -50px;
+    text-align: center;
+}
+
+header h1 {
+    width: 100%;
+    float: left;
+    text-align: center;
+    font: 900 20px/44px "Helvetica Neue", Helvetica, STHeiTi, sans-serif !important;
+}
+
+header a {
+    font-size: 18px;
+    color: #FFF;
+}
+
+
+/*heaser end*/
+
+
+/*main start*/
+
+.thumbnail-list {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+.thumbnail-list h3{
+	min-height: 57px;
+}
+.thumbnail-list > img,
+.thumbnail-list a > img {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    float: left;
+}
+
+a.thumbnail-list:hover,
+a.thumbnail-list:focus,
+a.thumbnail-list.active {
+    border-color: #337ab7;
+}
+
+.thumbnail-list .caption {
+    padding: 9px;
+    color: #333;
+    overflow: hidden;
+}
+
+
+
+
+/*main end*/
